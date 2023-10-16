@@ -11,7 +11,7 @@ import fnmatch
 import yfinance as yf
 from google.cloud import storage
 
-PROJECT_ID="amara-sandbox-1"
+PROJECT_ID="ecstatic-doodad-400311"
 STAGING_DATASET = "stock_dataset"
 LOCATION = "us-central1"
 
@@ -55,7 +55,7 @@ def get_data():
     # Upload the data to the selected bucket
     blob = bucket.blob('stock_data.csv')
     blob.upload_from_string(data)
-    print(f"data sucessfully uploadesd to {bucket}")
+    print(f"yes, data sucessfully uploadesd to {bucket}")
 
 
 with DAG('Stock_data',
