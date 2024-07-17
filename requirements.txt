@@ -4,5 +4,3 @@ yfinance>=0.2.1
 
 
 airflow
-
-dasdsa
